@@ -18,7 +18,7 @@ RUN unzip /tmp/pb.zip -d /pb/
 COPY ./pb_public /pb/pb_public
 
 # the local pb_hooks dir into the container
-COPY ./pb_hooks /pb/pb_hooks
+# COPY ./pb_hooks /pb/pb_hooks
 
 EXPOSE 8080
 
