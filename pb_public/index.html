@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="apple-touch-icon" sizes="57x57" href="/favicon/apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="/favicon/apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="/favicon/apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="/favicon/apple-icon-76x76.png" />
+    <link rel="apple-touch-icon" sizes="114x114" href="/favicon/apple-icon-114x114.png" />
+    <link rel="apple-touch-icon" sizes="120x120" href="/favicon/apple-icon-120x120.png" />
+    <link rel="apple-touch-icon" sizes="144x144" href="/favicon/apple-icon-144x144.png" />
+    <link rel="apple-touch-icon" sizes="152x152" href="/favicon/apple-icon-152x152.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-icon-180x180.png" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon/android-icon-192x192.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon/favicon-96x96.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png" />
+    <link rel="manifest" href="/favicon/manifest.json" />
+    <meta name="msapplication-TileColor" content="#ffffff" />
+    <meta name="msapplication-TileImage" content="/favicon/ms-icon-144x144.png" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="icon" type="image/svg+xml" href="/favicon/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!--
+      Here is basic SEO meta tags to enable social sharing and search engine indexing.
+    -->
+    <title>A la Mesa - Backend</title>
+    <meta name="robots" content="index,follow,max-image-preview:large" />
+    <meta property="og:title" content="A la Mesa - Backend" />
+    <meta name="description" content="A la Mesa - Backend, bla bla bla." />
+    <meta property="og:description" content="A la Mesa - Backend, bla bla bla." />
+    <meta property="og:site_name" content="A la Mesa - Backend" />
+    <meta property="og:locale" content="de_AT" />
+    <meta property="og:type" content="article" />
+    <meta property="og:url" content="https://alamesa.at/" />
+    <meta property="og:image:type" content="image/png" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image"
+      content="https://media.cssninja.io/embed/marketplace/product/wide.png?headline=Vue%203%20Admin%20and%20Webapp%20UI%20Kit&url=https%3A%2F%2Fcdn.schema.io%2Fcssninja%2F62671c0f1bfb2b0019e066aa%2F5badfba048f6ec5250e5e1a4e35cc5d2&previewUrl=https%3A%2F%2Fcdn.schema.io%2Fcssninja%2F62509cb6c752bf01326ee966%2Fa0c4a94938866331845447c595aacef2" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:site" content="@elingan" />
+
+
+    <style>
+      :root {
+        --color-primary: #ffcc00;
+        --color-secondary: #ff3e00;
+      }
+
+      .splash-screen {
+        position: fixed;
+        top: 0;
+        /* bottom: 0; */
+        left: 0;
+        /* right: 0; */
+        width: 100vw;
+        height: 100vh;
+        background: var(--color-primary);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5rem;
+        /* fallback for old browsers */
+        background: -webkit-linear-gradient(bottom,
+            var(--color-primary),
+            var(--color-primary));
+        /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to bottom,
+            var(--color-primary),
+            var(--color-primary));
+        transition: opacity 0.25s;
+        z-index: 1000;
+      }
+
+      .splash-screen img {
+        max-height: 25%;
+      }
+
+      .splash-screen--loader {
+        height: 5px;
+        width: 150px;
+        /* max-width: 25%; */
+        background-color: #ff3e0033;
+        position: relative;
+        overflow: hidden;
+        background-clip: padding-box;
+      }
+
+      .splash-screen--loader .lines {
+        height: 5px;
+        background-color: var(--color-secondary);
+      }
+
+      .splash-screen--loader .small-lines {
+        position: absolute;
+        overflow: hidden;
+        background-clip: padding-box;
+        display: block;
+        border-radius: 2px;
+        will-change: left, right;
+        animation-fill-mode: forwards;
+      }
+
+      .splash-screen--loader .small-lines.l1 {
+        animation: 2s cubic-bezier(0.65, 0.815, 0.735, 0.395) 0s infinite normal none running splash-screen--loader-long;
+      }
+
+      .splash-screen--loader .small-lines.l2 {
+        animation: 2s cubic-bezier(0.165, 0.84, 0.44, 1) calc((2s + 0.1) / 2) infinite normal none running splash-screen--loader-short;
+      }
+
+      @keyframes splash-screen--loader-long {
+        0% {
+          left: -35%;
+          right: 100%;
+        }
+
+        60% {
+          left: 100%;
+          right: -90%;
+        }
+
+        100% {
+          left: 100%;
+          right: -90%;
+        }
+      }
+
+      @keyframes splash-screen--loader-short {
+        0% {
+          left: -200%;
+          right: 100%;
+        }
+
+        60% {
+          left: 107%;
+          right: -8%;
+        }
+
+        100% {
+          left: 107%;
+          right: -8%;
+        }
+      }
+    </style>
+
+
+  </head>
+  <body>
+    <!-- Splash Screen  -->
+    <div id="splash-screen" class="splash-screen">
+      <img src="/logo.svg" alt="A la Mesa logo" />
+      <h1>Backend Fly</h1>
+    </div>
+  </body>
+</html>
