@@ -2,5 +2,5 @@
 
 onAfterBootstrap((e) => {
   console.log('Bootstrap finished!')
-  console.log(e.app)
+  console.log(e.app.isDev() ? 'Development mode' : 'Production mode')
 })
