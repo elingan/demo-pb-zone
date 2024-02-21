@@ -2,4 +2,5 @@
 
 onAfterBootstrap((e) => {
   console.log('Bootstrap finished!')
+  console.log(e.app)
 })
