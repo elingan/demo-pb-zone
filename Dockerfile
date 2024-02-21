@@ -1,6 +1,6 @@
 FROM alpine:latest
 
-ARG PB_VERSION=0.21.0
+ARG PB_VERSION=0.21.3
 ARG PB_ORIGINS="https://app.alamesa.at,https://admin.alamesa.at"
 ARG PB_DEV_MODE=--dev
 
