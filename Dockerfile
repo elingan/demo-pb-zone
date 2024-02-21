@@ -26,4 +26,4 @@ COPY ./pb_hooks /pb/pb_hooks
 EXPOSE 8080
 
 # start PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--hooksWatch=false", "--origins=${PB_ORIGINS}}", "--dev=${PB_DEV_MODE}"]
+CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--hooksWatch=false", "--origins", "${PB_ORIGINS}", "--dev", "${PB_DEV_MODE}"]
