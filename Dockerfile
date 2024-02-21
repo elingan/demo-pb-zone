@@ -15,7 +15,7 @@ RUN unzip /tmp/pb.zip -d /pb/
 # COPY ./pb_migrations /pb/pb_migrations
 
 # the local pb_public dir into the container
-# COPY ./pb_public /pb/pb_public
+COPY ./pb_public /pb/pb_public
 
 # the local pb_hooks dir into the container
 # COPY ./pb_hooks /pb/pb_hooks
