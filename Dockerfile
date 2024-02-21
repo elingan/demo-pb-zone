@@ -1,6 +1,8 @@
 FROM alpine:latest
 
 ARG PB_VERSION=0.21.0
+ARG PB_ORIGINS="https://app.alamesa.at,https://admin.alamesa.at"
+ARG PB_DEV_MODE=true
 
 # "openssh" is needed only if you want to use scp to copy later your pb_data locally
 RUN apk add --no-cache \
@@ -24,4 +26,4 @@ COPY ./pb_hooks /pb/pb_hooks
 EXPOSE 8080
 
 # start PocketBase
-CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080"]
+CMD ["/pb/pocketbase", "serve", "--http=0.0.0.0:8080", "--hooksWatch=false", "--origins=${PB_ORIGINS}}", "--dev=${PB_DEV_MODE}"]
